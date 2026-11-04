@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/g/!VibeCodeMashups/Megaman643DS/reference/N64Recomp/include/recompiler/context.h
+span
+-
+string_view
+-
+cstdint
+-
+utility
+-
+vector
+-
+unordered_map
+-
+unordered_set
+-
+filesystem
+-
+optional
+-
+
+/g/!VibeCodeMashups/Megaman643DS/reference/N64Recomp/src/symbol_lists.cpp
+recompiler/context.h
+/g/!VibeCodeMashups/Megaman643DS/reference/N64Recomp/src/recompiler/context.h
+

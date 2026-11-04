@@ -1,0 +1,1 @@
+/c/msys64/mingw64/bin/g++.exe -O3 -DNDEBUG -static CMakeFiles/N64RecompCLI.dir/src/config.cpp.o CMakeFiles/N64RecompCLI.dir/src/main.cpp.o -o N64Recomp.exe -Wl,--out-implib,libN64Recomp.dll.a -Wl,--major-image-version,0,--minor-image-version,0  lib/fmt/libfmt.a librabbitizer.a libN64Recomp.a libN64RecompElf.a librabbitizer.a libSymbolLists.a lib/fmt/libfmt.a

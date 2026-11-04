@@ -1,0 +1,1 @@
+/c/msys64/mingw64/bin/g++.exe -O3 -DNDEBUG -static CMakeFiles/LiveRecompTest.dir/LiveRecomp/live_recompiler_test.cpp.o -o LiveRecompTest.exe -Wl,--out-implib,libLiveRecompTest.dll.a -Wl,--major-image-version,0,--minor-image-version,0  libLiveRecomp.a libN64Recomp.a libSymbolLists.a lib/fmt/libfmt.a librabbitizer.a

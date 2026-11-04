@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/g/!VibeCodeMashups/Megaman643DS/tools/n64recomp/cmake_install.cmake",
+		"/g/!VibeCodeMashups/Megaman643DS/tools/n64recomp/lib/fmt/cmake_install.cmake",
+		"/g/!VibeCodeMashups/Megaman643DS/tools/n64recomp/lib/tomlplusplus/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

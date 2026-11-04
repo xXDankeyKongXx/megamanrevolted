@@ -1,0 +1,2 @@
+/c/msys64/mingw64/bin/ar.exe qc libSymbolLists.a CMakeFiles/SymbolLists.dir/src/symbol_lists.cpp.o
+/c/msys64/mingw64/bin/ranlib.exe libSymbolLists.a

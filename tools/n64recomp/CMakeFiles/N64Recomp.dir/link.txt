@@ -1,0 +1,2 @@
+/c/msys64/mingw64/bin/ar.exe qc libN64Recomp.a CMakeFiles/N64Recomp.dir/src/analysis.cpp.o CMakeFiles/N64Recomp.dir/src/operations.cpp.o CMakeFiles/N64Recomp.dir/src/cgenerator.cpp.o CMakeFiles/N64Recomp.dir/src/recompilation.cpp.o CMakeFiles/N64Recomp.dir/src/mod_symbols.cpp.o
+/c/msys64/mingw64/bin/ranlib.exe libN64Recomp.a

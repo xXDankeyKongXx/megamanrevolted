@@ -1,0 +1,2 @@
+/c/msys64/mingw64/bin/ar.exe qc libN64RecompElf.a CMakeFiles/N64RecompElf.dir/src/elf.cpp.o CMakeFiles/N64RecompElf.dir/src/mdebug.cpp.o CMakeFiles/N64RecompElf.dir/src/symbol_lists.cpp.o
+/c/msys64/mingw64/bin/ranlib.exe libN64RecompElf.a

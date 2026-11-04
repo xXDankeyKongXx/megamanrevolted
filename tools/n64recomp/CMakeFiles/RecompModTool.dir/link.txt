@@ -1,0 +1,1 @@
+/c/msys64/mingw64/bin/g++.exe -O3 -DNDEBUG -static CMakeFiles/RecompModTool.dir/src/config.cpp.o CMakeFiles/RecompModTool.dir/src/mod_symbols.cpp.o CMakeFiles/RecompModTool.dir/RecompModTool/main.cpp.o -o RecompModTool.exe -Wl,--out-implib,libRecompModTool.dll.a -Wl,--major-image-version,0,--minor-image-version,0  lib/fmt/libfmt.a libN64RecompElf.a lib/fmt/libfmt.a

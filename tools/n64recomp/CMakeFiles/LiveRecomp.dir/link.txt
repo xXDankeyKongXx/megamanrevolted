@@ -1,0 +1,2 @@
+/c/msys64/mingw64/bin/ar.exe qc libLiveRecomp.a CMakeFiles/LiveRecomp.dir/LiveRecomp/live_generator.cpp.o CMakeFiles/LiveRecomp.dir/lib/sljit/sljit_src/sljitLir.c.o
+/c/msys64/mingw64/bin/ranlib.exe libLiveRecomp.a

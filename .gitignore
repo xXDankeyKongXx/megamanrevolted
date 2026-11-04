@@ -1,0 +1,33 @@
+# The game itself: never in the repository (players use their own dump, rom_check.c)
+*.z64
+*.n64
+*.v64
+romfs/rom/
+
+# Builds (the personal CIA carries the ROM)
+build/
+build-o3ds/
+build-test/
+dist/
+*.cia
+*.3dsx
+*.elf
+*.smdh
+*.bnr
+
+# Local emulators: ROM copies, saves, settings
+azahar/
+citra/
+*.lnk
+
+# Other projects' repositories, cloned for reference
+reference/
+
+# Scratch and intermediate files
+tools/tmp/
+tools/test-objs/
+tools/runtime-objs/
+__pycache__/
+*.pyc
+*.o
+*.d

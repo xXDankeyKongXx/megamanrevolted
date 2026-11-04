@@ -1,0 +1,1 @@
+/c/msys64/mingw64/bin/g++.exe -O3 -DNDEBUG -static CMakeFiles/RecompModMerger.dir/src/config.cpp.o CMakeFiles/RecompModMerger.dir/RecompModMerger/main.cpp.o -o RecompModMerger.exe -Wl,--out-implib,libRecompModMerger.dll.a -Wl,--major-image-version,0,--minor-image-version,0  libN64Recomp.a libSymbolLists.a lib/fmt/libfmt.a librabbitizer.a

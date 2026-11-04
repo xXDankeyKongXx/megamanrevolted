@@ -1,0 +1,1 @@
+/c/msys64/mingw64/bin/g++.exe -O3 -DNDEBUG -static CMakeFiles/OfflineModRecomp.dir/src/config.cpp.o CMakeFiles/OfflineModRecomp.dir/OfflineModRecomp/main.cpp.o -o OfflineModRecomp.exe -Wl,--out-implib,libOfflineModRecomp.dll.a -Wl,--major-image-version,0,--minor-image-version,0  lib/fmt/libfmt.a librabbitizer.a libN64Recomp.a lib/fmt/libfmt.a librabbitizer.a libSymbolLists.a

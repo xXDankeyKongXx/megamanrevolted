@@ -1,0 +1,46 @@
+# N64Recomp config for the Mega Man 64 3DS port.
+# Derived from MegaMan64Recompiled/us.rev1.toml, minus the PC-only RT64 tagging,
+# widescreen/aspect hooks and texture-LOD patch. Paths are relative to this file.
+# Run: tools/n64recomp/N64Recomp.exe recomp/us.rev1.3ds.toml
+
+[input]
+entrypoint = 0x80025C00
+output_func_path = "RecompiledFuncs"
+symbols_file_path = "../reference/MegaMan64RecompSyms/megaman64.us.rev1.syms.toml"
+rom_file_path = "../Mega Man 64.z64"
+# Debugging: record every function entry (source/port/trace.h). Costs one store per call.
+trace_mode = true
+# Declares the hook/stub functions below (source/port/mm64_hooks.h)
+recomp_include = """#include "recomp.h"
+#include "mm64_hooks.h\""""
+
+manual_funcs = [
+]
+
+[patches]
+stubs = [
+	"Graph_ThreadStop",    # Stops the graphics thread; not supported by N64Recomp
+	"func_80087590_62990", # Starts the graphics thread; the runtime drives graphics instead
+]
+
+ignored = [
+]
+
+# Overlay loading -> runtime copies the overlay and registers its recompiled functions
+[[patches.hook]]
+func = "Overlay_Loader"
+before_vram = 0x80027404
+text = "recomp_load_overlays(rdram, ctx);"
+
+# Main thread busy-waits here; yield so other game threads can run
+[[patches.hook]]
+func = "func_8008A02C_6542C"
+before_vram = 0x8008A0E8
+text = "yield_self(rdram);"
+
+# Game saves (slot number in the name at $a0[4..5]): the port stores its own per-save data in the
+# slot's unused tail first (source/port/mm64_ext.cpp); the game's sector rewrite then keeps it.
+[[patches.hook]]
+func = "func_800875E8_629E8"
+before_vram = 0x800875E8
+text = "mm64_on_game_save(rdram, ctx);"
